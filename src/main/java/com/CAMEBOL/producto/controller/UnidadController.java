@@ -31,7 +31,7 @@ public class UnidadController {
 	@Autowired
 	private UnidadService unidadService;
 	
-	@GetMapping("/lista")
+	@GetMapping("/listaU")
 	public ResponseEntity<List<Unidad>> getAll(){
 		List<Unidad> list = unidadService.getAll();
 		return  new ResponseEntity<List<Unidad>>(list,HttpStatus.OK);
